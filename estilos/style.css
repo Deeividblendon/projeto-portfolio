@@ -116,7 +116,7 @@ main section#detalhes article {
 
 main section#detalhes article h2 {
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 main section#detalhes div.video-container {
@@ -174,4 +174,35 @@ main section#detalhes article#skills div#skill-container div.progresso {
   main section#detalhes article#skills div#skill-container {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+main section#detalhes article#formacao div#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+main section#detalhes article#formacao div#formacao-container div.curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+main section#detalhes article#formacao div#formacao-container div.curso:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+main section#detalhes article#formacao div#formacao-container p.periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+main section#detalhes article#formacao div#formacao-container h3.instituicao {
+  font-size: 1.1em;
+  color: var(--destaque-inverso);
 }
