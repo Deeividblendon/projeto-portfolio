@@ -253,6 +253,21 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  main section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  main section#detalhes {
+    grid-column: 3 / -1;
+  }
+
   main section#detalhes article#skills div#skill-container {
     grid-template-columns: 1fr 1fr;
   }
