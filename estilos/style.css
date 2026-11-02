@@ -7,7 +7,7 @@
 }
 
 :root {
-  --fundo-principal: #f1f1f1;
+  --fundo-principal: #f5f5f5;
   --texto: #222;
   --texto-inverso: #FFF;
   --destaque: #07F;
@@ -15,11 +15,21 @@
   --fundo-card: #FFF;
 }
 
+body.escuro {
+  --fundo-principal: #222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333;
+  --destaque: #f52;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444;
+}
+
 body {
   background-color: var(--fundo-principal);
   color: var(--texto);
   font-family: Verdana, Tahoma, sans-serif;
   line-height: 1.5em;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
